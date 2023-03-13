@@ -10,4 +10,5 @@ for x in range(3):
     d = response.json()
     page = d["archived_snapshots"]["closest"]["url"]
     print("Wersja sprzed lat : " + str(x+1) + " : " + page)
+    webbrowser.open(page)
 
